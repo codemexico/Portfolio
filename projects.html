@@ -81,10 +81,9 @@
 
         <span class="label">Tools</span>
         <div class="tools">
-            <span class="tool-tag">Python</span>
-            <span class="tool-tag">NumPy</span>
-            <span class="tool-tag">Matplotlib</span>
             <span class="tool-tag">MATLAB</span>
+            <span class="tool-tag">Heat Equation</span>
+
         </div>
         <div class="media-grid">
             <img src="Projects/animation_difussivemodel.gif" alt="Heat Diffusion Animation">
@@ -153,6 +152,119 @@
         <div class="media-grid">
             <img src="Projects/photo_1_telescope.png" alt="Telescope Construction">
             <img src="Projects/photo_2_telescope.png" alt="Telescope Observation">
+        </div>
+    </div>
+
+    <!-- Molecular Dynamics - Langevin Thermostat -->
+    <div class="project-card slide-in">
+        <h2>Molecular Dynamics Simulation with Langevin Thermostat</h2>
+        <div class="project-subtitle">Thermal Systems</div>
+        
+        <p>
+            A molecular dynamics simulation framework for modeling interacting particles under thermal 
+            fluctuations. 
+            The dynamics are governed by Newton's equations of motion and integrated numerically using 
+            the Velocity–Verlet algorithm.
+        </p>
+
+        <span class="label">Approach</span>
+        <p class="content">
+            A Langevin thermostat was incorporated to introduce viscous damping and stochastic noise, 
+            reproducing canonical ensemble statistics and realistic temperature control. The simulation 
+            captures particle trajectories, velocity distributions, energy evolution, and diffusive behavior. 
+            Interparticle interactions are modeled using the Lennard–Jones potential, enabling the study of 
+            collective effects and equilibrium properties. The project establishes a clear link between 
+            microscopic particle dynamics and macroscopic thermal behavior.
+        </p>
+
+        <span class="label">Tools</span>
+        <div class="tools">
+            <span class="tool-tag">Python</span>
+            <span class="tool-tag">Matplotlib</span>
+            <span class="tool-tag">LAMMPS</span>
+        </div>
+
+        <div class="media-grid">
+            <img src="Projects/langevin_1.png" alt="Langevin Thermostat Simulation">
+            <img src="Projects/langevin_2.png" alt="Molecular Dynamics Results">
+        </div>
+    </div>
+
+    <!-- Stochastic Optimization - Inventory and Pricing -->
+    <div class="project-card slide-in">
+        <h2>Data-Driven Stochastic Optimization of Inventory and Pricing Policies</h2>
+        <div class="project-subtitle">Final Integrated Project</div>
+        
+        <p>
+            An integrated framework for the stochastic optimization of inventory management and pricing 
+            strategies in a real-world economic system. The methodology combines predictive modeling, 
+            Monte Carlo simulation, and hybrid optimization techniques to address uncertainty and 
+            variability in demand.
+        </p>
+
+        <span class="label">Approach</span>
+        <p class="content">
+            A neural network model forecasts demand based on historical data, capturing nonlinear 
+            relationships and temporal patterns. These predictions are embedded into a stochastic 
+            simulation of daily operations, evaluating system performance under fluctuating conditions. 
+            Optimization is performed using a genetic algorithm to explore the decision space, followed 
+            by simulated annealing to refine solutions and improve convergence. The framework provides 
+            a scalable and generalizable approach to multi-objective optimization, balancing profitability 
+            and operational stability.
+        </p>
+
+        <span class="label">Tools</span>
+        <div class="tools">
+            <span class="tool-tag">Python</span>
+            <span class="tool-tag">Neural Networks</span>
+            <span class="tool-tag">Monte Carlo</span>
+            <span class="tool-tag">Genetic Algorithms</span>
+        </div>
+
+        <div class="media-grid">
+            <img src="Projects/demandagas_1.png" alt="Demand Prediction Model">
+            <img src="Projects/demandagas_2.png" alt="Optimization Results">
+        </div>
+        <a href="https://drive.google.com/file/d/163dI8oOURmp0W8Xrh4KPj7qDcF2ntN_u/view?usp=sharing" 
+           class="project-link" target="_blank" rel="noopener noreferrer">
+            View Application →
+        </a>
+    </div>
+
+    <!-- Simulated Annealing - Packing Fraction -->
+    <div class="project-card slide-in">
+        <h2>Stochastic Optimization of Packing Fraction Using Simulated Annealing</h2>
+        <div class="project-subtitle">Geometric Optimization</div>
+        
+        <p>
+            Development of a simulated-compression algorithm for maximizing the packing fraction of hard 
+            disks confined within a two-dimensional box. The algorithm determines dense, non-overlapping 
+            configurations by stochastically optimizing both particle positions and the effective size 
+            of the containing domain.
+        </p>
+
+        <span class="label">Approach</span>
+        <p class="content">
+            The algorithm proposes random displacements of particles, followed by an evaluation of an 
+            objective function that penalizes overlaps and inefficient spatial arrangements. Configuration 
+            updates are accepted or rejected according to a Metropolis-type criterion. A compression 
+            mechanism gradually reduces the confining box size, coupling configurational optimization 
+            with geometric compression. As the temperature decreases, the algorithm transitions from 
+            exploratory stochastic motion to deterministic refinement, converging toward configurations 
+            with high packing fraction.
+        </p>
+
+        <span class="label">Tools</span>
+        <div class="tools">
+            <span class="tool-tag">Python</span>
+            <span class="tool-tag">NumPy</span>
+            <span class="tool-tag">Simulated Annealing</span>
+            <span class="tool-tag">Metropolis Algorithm</span>
+        </div>
+
+        <div class="media-grid">
+            <img src="Projects/annealing_1.png" alt="Packing Configuration">
+            <img src="Projects/annealing_2.png" alt="Annealing Convergence">
         </div>
     </div>
 

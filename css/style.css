@@ -366,6 +366,38 @@ section h2 {
 }
 
 /* ═══════════════════════════════════════════════════════════════
+   PROJECT LINK (single link in card)
+   ═══════════════════════════════════════════════════════════════ */
+
+.project-link {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    
+    color: var(--accent-violet);
+    text-decoration: none;
+    
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    
+    margin-top: 2rem;
+    padding: 0.7rem 1.4rem;
+    
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.06), rgba(34, 211, 238, 0.06));
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    border-radius: 8px;
+    
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background: rgba(139, 92, 246, 0.12);
+    border-color: var(--accent-violet);
+    transform: translateX(4px);
+}
+
+/* ═══════════════════════════════════════════════════════════════
    PAGE HEADER (for Projects/Research pages)
    ═══════════════════════════════════════════════════════════════ */
 
