@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | Santiago Mejía</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <ul class="nav-links">
+        <li><a href="index.html">Profile</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="research.html" class="active">Research</a></li>
+    </ul>
+</nav>
+
+<header class="page-header">
+    <h1>Research</h1>
+    <p class="page-description">
+        Scientific modeling, computational physics, and machine learning research exploring 
+        quantum mechanics, neural networks, and astrophysical data analysis.
+    </p>
+</header>
+
+<section class="projects-container">
+
+    <!-- Research Project (Investigación) -->
+    <div class="project-card slide-in">
+        <h2>Geodesic Curves on Curved Surfaces</h2>
+        <div class="project-subtitle">Differential Geometry Research with Dr. Héctor Medel</div>
+        
+        <p>
+            A research-oriented numerical study centered on the modeling and simulation of geodesic 
+            paths on curved manifolds using computational tools. The work highlights the full research 
+            pipeline: conceptual formulation, mathematical modeling, numerical implementation, and 
+            visualization of results.
+        </p>
+
+        <span class="label">Approach</span>
+        <p class="content">
+            The project is complemented by an animation that communicates the system's behavior dynamically 
+            and intuitively within a specific manifold. The implementation leverages differential geometry principles and numerical 
+            integration methods.
+        </p>
+
+        <span class="label">Tools</span>
+        <div class="tools">
+            <span class="tool-tag">Python</span>
+            <span class="tool-tag">NumPy</span>
+            <span class="tool-tag">Matplotlib</span>
+            <span class="tool-tag">Differential Geometry</span>
+        </div>
+
+        <div class="media-container small">
+            <img src="Projects/animation_research.gif" alt="Geodesic Animation">
+        </div>
+    </div>
+
+    <!-- Physics-Informed Neural Networks -->
+    <div class="project-card slide-in">
+        <h2>Physics-Informed Neural Networks</h2>
+        <div class="project-subtitle">Scientific Machine Learning</div>
+        
+        <p>
+            Development of a Physics-Informed Neural Network (PINN) framework to solve ordinary 
+            differential equations by embedding physical laws directly into the training loss function. 
+            The approach leverages automatic differentiation to enforce governing equations and initial 
+            conditions without relying on labeled data.
+        </p>
+
+        <span class="label">Approach</span>
+        <p class="content">
+            Advanced architectural features such as Fourier feature encoding and residual connections are 
+            included to improve convergence. A graphical interface allows users to define equations and 
+            visualize solutions interactively, making the project both technically robust and user-friendly.
+        </p>
+
+        <span class="label">Tools</span>
+        <div class="tools">
+            <span class="tool-tag">Python</span>
+            <span class="tool-tag">PyTorch</span>
+            <span class="tool-tag">Tkinter</span>
+            <span class="tool-tag">NumPy</span>
+        </div>
+
+        <div class="media-container small">
+            <video autoplay loop muted playsinline>
+                <source src="Projects/pinn.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="links">
+            <a href="https://drive.google.com/file/d/1G2gXiSbgQ00l8T_TwvomqFjqFwLAv8My/view?usp=sharing" target="_blank">Download Application</a>
+        </div>
+    </div>
+
+    <div class="project-card slide-in">
+        <h2>Quantum Wave Packet Simulation</h2>
+        <div class="project-subtitle">Quantum Mechanics</div>
+        
+        <p>
+            Exploration of the time evolution of a quantum mechanical wave packet interacting with 
+            a potential barrier. Starting from analytical solutions of the Schrödinger equation, a 
+            Gaussian wave packet is constructed via superposition and evolved numerically in time.
+        </p>
+
+        <span class="label">Approach</span>
+        <p class="content">
+            The project investigates tunneling, reflection, and transmission phenomena, connecting 
+            quantum theory with visualization. An interactive executable application allows users to 
+            explore the dynamics of the wave packet in real time, demonstrating fundamental quantum 
+            mechanical principles.
+        </p>
+
+        <span class="label">Tools</span>
+        <div class="tools">
+            <span class="tool-tag">Python</span>
+            <span class="tool-tag">NumPy</span>
+            <span class="tool-tag">Matplotlib</span>
+            <span class="tool-tag">Tkinter</span>
+        </div>
+
+        <div class="media-container small">
+            <video autoplay loop muted playsinline>
+                <source src="Projects/quantum.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="links">
+            <a href="https://drive.google.com/file/d/1qjZCDs0Y5l3Eu4mycEgy_MysknbxFVbT/view?usp=sharing" target="_blank">Download Application</a>
+        </div>
+    </div>
+
+    <!-- Exoplanet Detection -->
+    <div class="project-card slide-in">
+        <h2>Exoplanet Detection Using Neural Networks</h2>
+        <div class="project-subtitle">Astrophysics & Machine Learning</div>
+        
+        <p>
+            Implementation of an automated pipeline for the classification of exoplanet transit signals 
+            from TESS light-curve data. Physical preprocessing techniques, including detrending and period 
+            detection, are combined with a one-dimensional convolutional neural network (CNN).
+        </p>
+
+        <span class="label">Approach</span>
+        <p class="content">
+            The model outputs probabilistic classifications distinguishing confirmed exoplanets from 
+            false positives. The project demonstrates the integration of astrophysical theory with 
+            modern machine learning, visual outputs, and a standalone 
+            executable application.
+        </p>
+
+        <span class="label">Tools</span>
+        <div class="tools">
+            <span class="tool-tag">Python</span>
+            <span class="tool-tag">TensorFlow</span>
+            <span class="tool-tag">Lightkurve</span>
+            <span class="tool-tag">NumPy</span>
+        </div>
+
+        <div class="media-container">
+            <img src="Projects/photo_exo.png" alt="Exoplanet Detection Interface">
+        </div>
+
+        <div class="links">
+            <a href="https://drive.google.com/file/d/1gtfSsxijIqjPU6zQeXruKEeCfgh9GpUu/view?usp=sharing" target="_blank">Download Application</a>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Santiago Mejía
+</footer>
+
+<script src="js/animations.js"></script>
+</body>
+</html>

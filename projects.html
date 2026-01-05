@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Santiago Mejía</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <ul class="nav-links">
+        <li><a href="index.html">Profile</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="research.html">Research</a></li>
+    </ul>
+</nav>
+
+<header class="page-header">
+    <h1>Projects</h1>
+    <p class="page-description">
+        Applied engineering and industrial simulation projects, featuring physics-based modeling, 
+        numerical methods, and computational tools developed for real-world applications.
+    </p>
+</header>
+
+<section class="projects-container">
+
+    <!-- Rotary Cutter - John Deere -->
+    <div class="project-card slide-in">
+        <h2>Rotary Cutter Dynamic Model</h2>
+        <div class="project-subtitle">John Deere</div>
+        
+        <p>
+            Complete dynamic modeling of a rotary cutter system using the Euler–Lagrange formalism 
+            with dissipative Rayleigh terms. The system is modeled as a set of coupled nonlinear 
+            differential equations describing the rotational motion of the disk and blades under 
+            realistic operating conditions. The project was part of a work collaboration with John Deere.
+        </p>
+
+        <span class="label">Approach</span>
+        <p class="content">
+            Numerical integration via fourth-order Runge-Kutta (RK4) to simulate the system's response, 
+            enabling analysis of torque requirements, blade dynamics, and energy dissipation. The model 
+            bridges theoretical mechanics with an applied industrial context. 
+        </p>
+
+        <span class="label">Tools</span>
+        <div class="tools">
+            <span class="tool-tag">Python</span>
+            <span class="tool-tag">NumPy</span>
+            <span class="tool-tag">Matplotlib</span>
+            <span class="tool-tag">Tkinter</span>
+        </div>
+
+        <div class="media-container">
+            <video autoplay loop muted playsinline>
+                <source src="Projects/animation_lagrangian.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <!-- Diffusive Model - Ternium -->
+    <div class="project-card slide-in">
+        <h2>Heat Diffusion in Steel Annealing</h2>
+        <div class="project-subtitle">Ternium</div>
+        
+        <p>
+            Numerical modeling of heat diffusion in steel coils during the annealing process used 
+            in industrial bell furnaces. A physically motivated diffusion model was implemented to 
+            capture the transient thermal behavior of the material under controlled furnace conditions.
+        </p>
+
+        <span class="label">Approach</span>
+        <p class="content">
+            The project emphasizes the relationship between thermal diffusivity, geometry, and process time, 
+            providing insight into how annealing duration can be optimized without compromising material quality. 
+            Results are supported by visual animations illustrating the evolution of the temperature field.
+        </p>
+
+        <span class="label">Tools</span>
+        <div class="tools">
+            <span class="tool-tag">Python</span>
+            <span class="tool-tag">NumPy</span>
+            <span class="tool-tag">Matplotlib</span>
+            <span class="tool-tag">MATLAB</span>
+        </div>
+        <div class="media-grid">
+            <img src="Projects/animation_difussivemodel.gif" alt="Heat Diffusion Animation">
+            <img src="Projects/coldyhot.png" alt="Point">
+        </div>
+
+    </div>
+
+    <!-- Thermal Optimization - Munters -->
+    <div class="project-card slide-in">
+        <h2>Thermal–Energy Optimization</h2>
+        <div class="project-subtitle">Munters Cooling Systems</div>
+        
+        <p>
+            Analysis of the thermal performance of photovoltaic systems enhanced with cooling technologies 
+            inspired by Munters industrial solutions. A thermodynamic energy balance model was developed to 
+            study the impact of convective and radiative cooling on panel efficiency.
+        </p>
+
+        <span class="label">Approach</span>
+        <p class="content">
+            The project integrates real environmental data, heat transfer theory, and numerical simulation 
+            to evaluate performance improvements and economic feasibility. The work is structured as a 
+            technical document aimed at applied energy optimization problems.
+        </p>
+
+        <span class="label">Tools</span>
+        <div class="tools">
+            <span class="tool-tag">Python</span>
+            <span class="tool-tag">NumPy</span>
+            <span class="tool-tag">Pandas</span>
+            <span class="tool-tag">Thermodynamics</span>
+        </div>
+        <div class="media-container small">
+            <img src="Projects/munters_photo.png" type="video/mp4">
+        </div>
+        
+    </div>
+
+    <!-- Telescope -->
+    <div class="project-card slide-in">
+        <h2>Optical Telescope Construction</h2>
+        <div class="project-subtitle">Experimental Optics</div>
+        
+        <p>
+            Complete design, construction, calibration, and characterization of a functional optical telescope. 
+            The project includes theoretical calculations of magnification, focal lengths, and resolution, as 
+            well as ray-tracing simulations based on the physical dimensions of the prototype.
+        </p>
+
+        <span class="label">Approach</span>
+        <p class="content">
+            Experimental calibration techniques were applied to quantify measurement uncertainty and image quality. 
+            The project documents both the theoretical framework and experimental methodology, supported by 
+            original photographs of the telescope and observed astronomical objects.
+        </p>
+
+        <span class="label">Tools</span>
+        <div class="tools">
+            <span class="tool-tag">Optical Design</span>
+            <span class="tool-tag">Ray Tracing</span>
+            <span class="tool-tag">Python</span>
+            <span class="tool-tag">Uncertainty Analysis</span>
+        </div>
+
+        <div class="media-grid">
+            <img src="Projects/photo_1_telescope.png" alt="Telescope Construction">
+            <img src="Projects/photo_2_telescope.png" alt="Telescope Observation">
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Santiago Mejía
+</footer>
+
+<script src="js/animations.js"></script>
+</body>
+</html>
