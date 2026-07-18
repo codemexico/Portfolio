@@ -10,6 +10,7 @@
 <body>
 
 <nav class="navbar">
+    <a href="index.html" class="nav-brand">Santiago Mejía</a>
     <ul class="nav-links">
         <li><a href="index.html">Profile</a></li>
         <li><a href="work.html">Work</a></li>
@@ -21,116 +22,73 @@
 <header class="page-header">
     <h1>Research</h1>
     <p class="page-description">
-        Scientific modeling, computational physics, and machine learning research exploring 
-        quantum mechanics, neural networks, and astrophysical data analysis.
+        Scientific modeling and computational physics research spanning data-driven dynamical
+        systems, differential geometry, and general relativity.
     </p>
 </header>
 
 <section class="projects-container">
 
-    <!-- Research Project (Investigación) -->
+    <!-- Data-Driven Dynamical Systems -->
     <div class="project-card slide-in">
-        <h2>Geodesic Curves on Curved Surfaces</h2>
-        <div class="project-subtitle">Differential Geometry Research with Dr. Héctor Medel</div>
-        
+        <h2>Data-Driven Methods for Nonlinear Dynamical Systems</h2>
+        <div class="project-subtitle">OP Research Group · Ongoing</div>
+
         <p>
-            A research-oriented numerical study centered on the modeling and simulation of geodesic 
-            paths on curved manifolds using computational tools. The work highlights the full research 
-            pipeline: conceptual formulation, mathematical modeling, numerical implementation, and 
-            visualization of results.
+            Ongoing research on data-driven modeling of nonlinear dynamical systems. The work is
+            methodological in nature, building models directly from measured time series and using
+            them for analysis, forecasting, and control.
+        </p>
+
+        <span class="label">Toolbox</span>
+        <p class="content">
+            Koopman and Perron–Frobenius (transfer) operator theory, time-delay embeddings in the
+            HAVOK family, neural representations such as autoencoders, model predictive control,
+            and probabilistic model validation. Applications and results are currently unpublished.
+        </p>
+
+        <span class="label">Tools</span>
+        <div class="tools">
+            <span class="tool-tag">Python</span>
+            <span class="tool-tag">PyTorch</span>
+            <span class="tool-tag">Koopman / Transfer Operators</span>
+            <span class="tool-tag">MPC</span>
+        </div>
+
+        <div class="media-container">
+            <img src="Projects/operator_methods.png" alt="Transfer operator estimation and invariant measure (methodological illustration)">
+        </div>
+    </div>
+
+    <!-- Research under Dr. Medel Cobaxín -->
+    <div class="project-card slide-in">
+        <h2>Research under Dr. Héctor Medel Cobaxín</h2>
+        <div class="project-subtitle">Contact Hamiltonians & General Relativity · Ongoing</div>
+
+        <p>
+            Research collaboration spanning the numerical study of geodesic perturbations in general relativity,
+            and ongoing theoretical work on contact Hamiltonians.
         </p>
 
         <span class="label">Approach</span>
         <p class="content">
-            The project is complemented by an animation that communicates the system's behavior dynamically 
-            and intuitively within a specific manifold. The implementation leverages differential geometry principles and numerical 
-            integration methods.
+            Geodesic equations are integrated numerically on curved geometries, with conservation
+            diagnostics used to validate the trajectories and study the effect of metric perturbations.
+            Analytical derivations are verified through computer algebra and complemented by numerical
+            experiments in Python and Julia. 
         </p>
 
         <span class="label">Tools</span>
         <div class="tools">
             <span class="tool-tag">Python</span>
             <span class="tool-tag">Julia</span>
+            <span class="tool-tag">SymPy</span>
             <span class="tool-tag">Differential Geometry</span>
         </div>
 
-        <div class="media-container small">
-            <img src="Projects/animation_research.gif" alt="Geodesic Animation">
-        </div>
-    </div>
-
-   
-
-    <div class="project-card slide-in">
-        <h2>Quantum Wave Packet Simulation</h2>
-        <div class="project-subtitle">Quantum Mechanics</div>
-        
-        <p>
-            Exploration of the time evolution of a quantum mechanical wave packet interacting with 
-            a potential barrier. Starting from analytical solutions of the Schrödinger equation, a 
-            Gaussian wave packet is constructed via superposition and evolved numerically in time.
-        </p>
-
-        <span class="label">Approach</span>
-        <p class="content">
-            The project investigates tunneling, reflection, and transmission phenomena, connecting 
-            quantum theory with visualization. An interactive executable application allows users to 
-            explore the dynamics of the wave packet in real time, demonstrating fundamental quantum 
-            mechanical principles.
-        </p>
-
-        <span class="label">Tools</span>
-        <div class="tools">
-            <span class="tool-tag">Python</span>
-            <span class="tool-tag">NumPy</span>
-            <span class="tool-tag">Matplotlib</span>
-            <span class="tool-tag">Tkinter</span>
-        </div>
-
-        <div class="media-container small">
-            <video autoplay loop muted playsinline>
-                <source src="Projects/quantum.mp4" type="video/mp4">
-            </video>
-        </div>
-
-        <div class="links">
-            <a href="https://drive.google.com/file/d/1qjZCDs0Y5l3Eu4mycEgy_MysknbxFVbT/view?usp=sharing" target="_blank">Download Application</a>
-        </div>
-    </div>
-
-    <!-- Exoplanet Detection -->
-    <div class="project-card slide-in">
-        <h2>Exoplanet Detection Using Neural Networks</h2>
-        <div class="project-subtitle">Astrophysics & Machine Learning</div>
-        
-        <p>
-            Implementation of an automated pipeline for the classification of exoplanet transit signals 
-            from TESS light-curve data. Physical preprocessing techniques, including detrending and period 
-            detection, are combined with a one-dimensional convolutional neural network (CNN).
-        </p>
-
-        <span class="label">Approach</span>
-        <p class="content">
-            The model outputs probabilistic classifications distinguishing confirmed exoplanets from 
-            false positives. The project demonstrates the integration of astrophysical theory with 
-            modern machine learning, visual outputs, and a standalone 
-            executable application.
-        </p>
-
-        <span class="label">Tools</span>
-        <div class="tools">
-            <span class="tool-tag">Python</span>
-            <span class="tool-tag">TensorFlow</span>
-            <span class="tool-tag">Lightkurve</span>
-            <span class="tool-tag">NumPy</span>
-        </div>
-
-        <div class="media-container">
-            <img src="Projects/photo_exo.png" alt="Exoplanet Detection Interface">
-        </div>
-
-        <div class="links">
-            <a href="https://drive.google.com/file/d/1gtfSsxijIqjPU6zQeXruKEeCfgh9GpUu/view?usp=sharing" target="_blank">Download Application</a>
+        <div class="media-grid">
+            <img src="Projects/geodesic_perturbation_1.png" alt="Geodesic trajectory and conservation diagnostics under a time-dependent axisymmetric perturbation">
+            <img src="Projects/geodesic_perturbation_2.png" alt="Geodesic trajectory and conservation diagnostics under a dipolar perturbation">
         </div>
     </div>
 

@@ -10,6 +10,7 @@
 <body>
 
 <nav class="navbar">
+    <a href="index.html" class="nav-brand">Santiago Mejía</a>
     <ul class="nav-links">
         <li><a href="index.html">Profile</a></li>
         <li><a href="work.html">Work</a></li>
@@ -21,12 +22,82 @@
 <header class="page-header">
     <h1>Projects</h1>
     <p class="page-description">
-        Applied engineering and industrial simulation projects, featuring physics-based modeling, 
-        numerical methods, and computational tools developed for real-world applications.
+        Applied engineering, scientific computing, and instrumentation projects — physics-based
+        modeling, numerical methods, machine learning, and computational tools developed for
+        real-world applications.
     </p>
 </header>
 
 <section class="projects-container">
+
+    <!-- RiskGate -->
+    <div class="project-card slide-in">
+        <h2>RiskGate: Portfolio and Options Risk System</h2>
+        <div class="project-subtitle">Quantitative Finance</div>
+
+        <p>
+            Co-developed a Python-based decision-support system integrating equity backtesting,
+            Black–Scholes option valuation with GARCH volatility, statistical arbitrage, position
+            sizing, and automated paper trading through Alpaca.
+        </p>
+
+        <span class="label">Approach</span>
+        <p class="content">
+            The system produces a 0–100 approval score combining market regime, technical signals,
+            option quality, and process discipline, with hard stops and risk-budget-based sizing.
+            Strategies were evaluated across nine equities using 2022–2026 market data, 10,000
+            Monte Carlo simulations, and paper-trading experiments, while documenting concentration,
+            execution, and model risks.
+        </p>
+
+        <span class="label">Tools</span>
+        <div class="tools">
+            <span class="tool-tag">Python</span>
+            <span class="tool-tag">GARCH</span>
+            <span class="tool-tag">Monte Carlo</span>
+            <span class="tool-tag">Alpaca API</span>
+        </div>
+
+        <div class="media-container">
+            <img src="Projects/riskgate_1.png" alt="Monte Carlo strategy paths with percentile bands (illustrative)">
+        </div>
+        <div class="media-container">
+            <img src="Projects/riskgate_2.png" alt="Position-sizing comparison — equity and drawdown (illustrative)">
+        </div>
+    </div>
+
+    <!-- Fringe Projection Profilometry -->
+    <div class="project-card slide-in">
+        <h2>3D Reconstruction by Fringe Projection Profilometry</h2>
+        <div class="project-subtitle">Experimental Optics</div>
+
+        <p>
+            Design and implementation of a full optical profilometry pipeline that reconstructs
+            the three-dimensional shape of real objects from projected fringe patterns. The system
+            combines an experimental projection setup with a complete numerical processing chain.
+        </p>
+
+        <span class="label">Approach</span>
+        <p class="content">
+            Four-step phase-shifting was used to extract the wrapped phase, followed by phase
+            unwrapping, geometric calibration, and a height model to convert phase into physical
+            depth. Robust filtering and object masking were applied to clean the measurements, and
+            the method was validated against a reference sphere to quantify reconstruction accuracy.
+        </p>
+
+        <span class="label">Tools</span>
+        <div class="tools">
+            <span class="tool-tag">Python</span>
+            <span class="tool-tag">Phase-Shifting Interferometry</span>
+            <span class="tool-tag">Image Processing</span>
+            <span class="tool-tag">Uncertainty Analysis</span>
+        </div>
+
+        <div class="media-grid">
+            <img src="Projects/fringe_projection_1.png" alt="Projected Fringe Patterns">
+            <img src="Projects/fringe_projection_2.png" alt="3D Reconstructions">
+        </div>
+    </div>
 
     <!-- Rotary Cutter - John Deere -->
     <div class="project-card slide-in">
@@ -94,37 +165,6 @@
 
 
 
-    <!-- Thermal Optimization - Munters -->
-    <div class="project-card slide-in">
-        <h2>Thermal–Energy Optimization</h2>
-        <div class="project-subtitle">Munters Cooling Systems</div>
-        
-        <p>
-            Analysis of the thermal performance of photovoltaic systems enhanced with cooling technologies 
-            inspired by Munters industrial solutions. A thermodynamic energy balance model was developed to 
-            study the impact of convective and radiative cooling on panel efficiency.
-        </p>
-
-        <span class="label">Approach</span>
-        <p class="content">
-            The project integrates real environmental data, heat transfer theory, and numerical simulation 
-            to evaluate performance improvements and economic feasibility. The work is structured as a 
-            technical document aimed at applied energy optimization problems.
-        </p>
-
-        <span class="label">Tools</span>
-        <div class="tools">
-            <span class="tool-tag">Python</span>
-            <span class="tool-tag">NumPy</span>
-            <span class="tool-tag">Pandas</span>
-            <span class="tool-tag">Thermodynamics</span>
-        </div>
-        <div class="media-container small">
-            <img src="Projects/munters_photo.png" type="video/mp4">
-        </div>
-        
-    </div>
-
     <!-- Telescope -->
     <div class="project-card slide-in">
         <h2>Optical Telescope Construction</h2>
@@ -157,38 +197,72 @@
         </div>
     </div>
 
-    <!-- Molecular Dynamics - Langevin Thermostat -->
+    <!-- Wireless Luminance Meter -->
     <div class="project-card slide-in">
-        <h2>Molecular Dynamics Simulation with Langevin Thermostat</h2>
-        <div class="project-subtitle">Stochastic Thermal Systems</div>
-        
+        <h2>Wireless Luminance Meter for Displays</h2>
+        <div class="project-subtitle">Electronic Instrumentation · Team Project</div>
+
         <p>
-            A molecular dynamics simulation framework for modeling interacting particles under thermal 
-            fluctuations. 
-            The dynamics are governed by Newton's equations of motion and integrated numerically using 
-            the Velocity–Verlet algorithm.
+            Design and construction of a handheld wireless instrument for measuring display luminance,
+            combining a VEML7700 digital sensor with an LDR reference on an Arduino UNO R4 WiFi. The
+            device includes an LCD, LED range indicators, and a 3D-printed ergonomic housing, and was
+            validated through an experimental characterization of linearity, hysteresis, repeatability,
+            and uncertainty.
+        </p>
+
+        <span class="label">My Role</span>
+        <p class="content">
+            I was mainly responsible for the software and connectivity: the microcontroller code for
+            acquisition, processing, and state indication; the wireless link that logs measurements to
+            the ThingSpeak IoT platform; and the visualization interfaces, including a MATLAB GUI and
+            a custom live web dashboard.
+        </p>
+
+        <span class="label">Tools</span>
+        <div class="tools">
+            <span class="tool-tag">Arduino / C++</span>
+            <span class="tool-tag">MATLAB</span>
+            <span class="tool-tag">ThingSpeak IoT</span>
+            <span class="tool-tag">HTML / JS</span>
+        </div>
+
+        <div class="media-grid">
+            <img src="Projects/luminance_render.png" alt="CAD render of the luminance meter prototype">
+        </div>
+    </div>
+
+    <!-- Exoplanet Detection -->
+    <div class="project-card slide-in">
+        <h2>Exoplanet Detection Using Neural Networks</h2>
+        <div class="project-subtitle">Astrophysics & Machine Learning</div>
+
+        <p>
+            Implementation of an automated pipeline for the classification of exoplanet transit signals
+            from TESS light-curve data. Physical preprocessing techniques, including detrending and period
+            detection, are combined with a one-dimensional convolutional neural network (CNN).
         </p>
 
         <span class="label">Approach</span>
         <p class="content">
-            A Langevin thermostat was incorporated to introduce viscous damping and stochastic noise, 
-            reproducing canonical ensemble statistics and realistic temperature control. The simulation 
-            captures particle trajectories, velocity distributions, energy evolution, and diffusive behavior. 
-            Interparticle interactions are modeled using the Lennard–Jones potential, enabling the study of 
-            collective effects and equilibrium properties. The project establishes a clear link between 
-            microscopic particle dynamics and macroscopic thermal behavior.
+            The model outputs probabilistic classifications distinguishing confirmed exoplanets from
+            false positives. The project demonstrates the integration of astrophysical theory with
+            modern machine learning, visual outputs, and a standalone executable application.
         </p>
 
         <span class="label">Tools</span>
         <div class="tools">
             <span class="tool-tag">Python</span>
-            <span class="tool-tag">Matplotlib</span>
-            <span class="tool-tag">LAMMPS</span>
+            <span class="tool-tag">TensorFlow</span>
+            <span class="tool-tag">Lightkurve</span>
+            <span class="tool-tag">NumPy</span>
         </div>
 
-        <div class="media-grid">
-            <img src="Projects/langevin_1.png" alt="Langevin Thermostat Simulation">
-            <img src="Projects/langevin_2.png" alt="Molecular Dynamics Results">
+        <div class="media-container">
+            <img src="Projects/exoplanet_transit.png" alt="Detrended and phase-folded transit light curve (illustrative)">
+        </div>
+
+        <div class="links">
+            <a href="https://drive.google.com/file/d/1gtfSsxijIqjPU6zQeXruKEeCfgh9GpUu/view?usp=sharing" target="_blank">Download Application</a>
         </div>
     </div>
 

@@ -10,6 +10,7 @@
 <body>
 
 <nav class="navbar">
+    <a href="index.html" class="nav-brand">Santiago Mejía</a>
     <ul class="nav-links">
         <li><a href="index.html">Profile</a></li>
         <li><a href="work.html" class="active">Work</a></li>
@@ -21,29 +22,115 @@
 <header class="page-header">
     <h1>Work Experience</h1>
     <p class="page-description">
-        Professional experience in simulation engineering, digital twins, and research automation 
-        across industrial and technology-driven environments.
+        Professional experience in simulation engineering, scientific research, and data analytics
+        across industrial, academic, and technology-driven environments.
     </p>
 </header>
 
 <section class="projects-container">
 
-    <!-- Schneider Electric -->
+    <!-- imec -->
     <div class="project-card slide-in">
-        <h2>Advanced Simulations Team Intern</h2>
-        <div class="project-subtitle">Schneider Electric · Hybrid</div>
-        <p class="work-period">February 2025 – Present</p>
-        
+        <h2>Incoming International Scholar</h2>
+        <div class="project-subtitle">imec · Leuven, Belgium</div>
+        <p class="work-period">September 2026 – January 2027</p>
+
         <p>
-            Member of the Digital Twin team focused on advanced simulations for industrial components. 
-            Developed in-house automation tools to streamline simulation workflows in Ansys Mechanical, 
-            significantly reducing manual work and improving documentation quality.
+            Selected to work under Dr. David Coenen on electro-thermal modeling and thermal
+            constraints in advanced nanoelectronic systems.
+        </p>
+
+        <span class="label">Focus</span>
+        <ul class="work-list">
+            <li>Physics-based numerical modeling of thermal behavior in optical links</li>
+            <li>Coupled electrical–thermal analysis of advanced devices</li>
+        </ul>
+
+        <span class="label">Tools</span>
+        <div class="tools">
+            <span class="tool-tag">Electro-Thermal Modeling</span>
+            <span class="tool-tag">Numerical Simulation</span>
+            <span class="tool-tag">Machine Learning</span>
+        </div>
+    </div>
+
+    <!-- OP Research Group -->
+    <div class="project-card slide-in">
+        <h2>Undergraduate Researcher</h2>
+        <div class="project-subtitle">OP Research Group, Tec de Monterrey · Hybrid</div>
+        <p class="work-period">January 2026 – Present</p>
+
+        <p>
+            Member of the Oliver Probst Research Group, focused on nonlinear dynamical systems, Koopman and
+            Perron–Frobenius operators, energy systems, and machine learning.
         </p>
 
         <span class="label">Key Contributions</span>
         <ul class="work-list">
-            <li>Created an automatic report generator that identifies result types and compiles figures for documentation</li>
-            <li>Designed macros to evaluate stress in bolts and automate screenshot generation for simulation evidence</li>
+            <li>Developed and validated Koopman/HAVOK models for multichannel time-series analysis and control-oriented system identification</li>
+            <li>Supported reproducible numerical experiments, model validation, and scientific communication across collaborative projects</li>
+        </ul>
+
+        <span class="label">Tools</span>
+        <div class="tools">
+            <span class="tool-tag">Python</span>
+            <span class="tool-tag">Julia</span>
+            <span class="tool-tag">Dynamical Systems</span>
+            <span class="tool-tag">Machine Learning</span>
+        </div>
+
+        <div class="media-container">
+            <img src="Work/op_embedding.png" alt="From a scalar time series to a time-delay embedded attractor (methodological illustration)">
+        </div>
+    </div>
+
+    <!-- LiFE -->
+    <div class="project-card slide-in">
+        <h2>Data Analytics Intern</h2>
+        <div class="project-subtitle">Dirección de Formación LiFE, Tec de Monterrey · Hybrid</div>
+        <p class="work-period">January 2026 – July 2026</p>
+
+        <p>
+            Analyzed records for 21,066 undergraduate graduates across four cohorts to study
+            associations between LiFE participation and academic and formative outcomes.
+        </p>
+
+        <span class="label">Key Contributions</span>
+        <ul class="work-list">
+            <li>Applied Kruskal–Wallis tests, Welch ANOVA, effect sizes, and adjusted linear and logistic regression while distinguishing association from causality</li>
+            <li>Built an interactive Power BI dashboard using Power Query, DAX, and a star-schema model for analysis by campus, school, academic program, and activity type</li>
+        </ul>
+
+        <span class="label">Tools</span>
+        <div class="tools">
+            <span class="tool-tag">Power BI</span>
+            <span class="tool-tag">DAX</span>
+            <span class="tool-tag">Power Query</span>
+            <span class="tool-tag">Statistics</span>
+        </div>
+
+        <div class="media-container">
+            <img src="Work/life_stats.png" alt="Association analysis — group comparison and adjusted logistic fit (methodological illustration)">
+        </div>
+    </div>
+
+    <!-- Schneider Electric -->
+    <div class="project-card slide-in">
+        <h2>Digital Twin Intern</h2>
+        <div class="project-subtitle">Schneider Electric · Hybrid</div>
+        <p class="work-period">February 2025 – February 2026</p>
+
+        <p>
+            Member of the Digital Twin team focused on high-fidelity finite-element simulations
+            of industrial components. Developed in-house automation tools to streamline simulation
+            workflows in Ansys Mechanical, significantly reducing manual work and improving
+            documentation quality.
+        </p>
+
+        <span class="label">Key Contributions</span>
+        <ul class="work-list">
+            <li>Built Python and ACT automation tools in Ansys Mechanical for model setup, stress evaluation, bolt representation, and parameterized studies</li>
+            <li>Automated post-processing, result extraction, and report generation for repeatable engineering workflows</li>
             <li>Ran and analyzed custom simulation models to support internal design and optimization efforts</li>
         </ul>
 
