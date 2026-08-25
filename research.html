@@ -9,175 +9,152 @@
 </head>
 <body>
 
-<div class="wrap">
-
-<header class="masthead">
-    <div class="site-title"><a href="index.html">Santiago Mejía</a></div>
-    <p class="site-tagline">
-        Engineering physics at Tec de Monterrey. Computational modeling, nonlinear dynamical
-        systems, scientific simulation, and applied machine learning.
-    </p>
-</header>
-
-<div class="layout">
-
-<main class="content">
-
-    <h1 class="page-title">Research</h1>
-    <p class="page-intro">
-        Scientific modeling and computational physics — data-driven dynamical systems,
-        structure-preserving numerical integration, differential geometry, and general relativity.
-    </p>
-
-    <!-- Preprint: projected contact integrator -->
-    <article class="entry">
-        <h2 class="entry-title">
-            A Projected Semiexplicit Integrator for Dissipative Systems with
-            Configuration-Dependent Kinetic Energy
-        </h2>
-        <p class="entry-meta">
-            17 August 2026 in math-ph, math.DS, math.NA
-            <span class="sep">|</span>
-            arXiv:2608.17198
-            <span class="sep">|</span>
-            with L. Loera-Galeana, E. Alvarado and H. Medel-Cobaxín
-        </p>
-
-        <div class="entry-body">
-            <p>
-                Contact Hamiltonian dynamics gives dissipative mechanics an intrinsic action
-                variable, but the explicit contact splittings available today only reach kinetic
-                energies whose terms are exactly integrable — frozen-coordinate diagonal metrics
-                such as the spherical pendulum or a particle on a torus. Dense metrics with momentum
-                cross terms, with the double pendulum as the flagship case, fall outside that class.
-            </p>
-            <p>
-                <span class="runin">Method.</span> We introduce a projected Pihajoki–contact
-                integrator for the non-separable setting, combining phase-space duplication,
-                symmetric projection onto the physical diagonal, and constant-friction damping
-                half-steps, with the action factor carried by an exact Herglotz update. It needs no
-                binding parameter and confines the nonlinear solve to the 2n projection variables.
-                Under constant friction the step rescales the contact volume by the exact factor
-                e<sup>−γτ</sup>, and time-symmetry yields an O(τ³) one-step residual in the contact
-                form.
-            </p>
-            <p>
-                <span class="runin">Results.</span> On the damped double pendulum, spherical
-                pendulum and torus particle the method is second-order accurate, reproduces the
-                contact decay law, and controls long-time energy and contact drift in coarse or
-                stiff regimes where the Tao baseline and the unprojected average lose the solution.
-                Where a frozen-coordinate splitting exists it still wins at matched cost; for the
-                dense double-pendulum metric the realizable alternative is first-order with a
-                prohibitive constant, and the projected method prevails.
-            </p>
-
-            <p class="entry-links">
-                <a href="https://arxiv.org/abs/2608.17198">Read the preprint on arXiv</a>
-            </p>
-        </div>
-    </article>
-
-    <!-- Data-Driven Dynamical Systems -->
-    <article class="entry">
-        <h2 class="entry-title">Data-Driven Methods for Nonlinear Dynamical Systems</h2>
-        <p class="entry-meta">
-            Ongoing
-            <span class="sep">|</span>
-            OP Research Group, Tec de Monterrey
-            <span class="sep">|</span>
-            Python, PyTorch, Koopman and transfer operators, MPC
-        </p>
-
-        <div class="entry-body">
-            <p>
-                Ongoing research on data-driven modeling of nonlinear dynamical systems. The work is
-                methodological in nature, building models directly from measured time series and
-                using them for analysis, forecasting, and control.
-            </p>
-            <p>
-                <span class="runin">Toolbox.</span> Koopman and Perron–Frobenius (transfer) operator
-                theory, time-delay embeddings in the HAVOK family, neural representations such as
-                autoencoders, model predictive control, and probabilistic model validation.
-                Applications and results are currently unpublished.
-            </p>
-
-            <div class="figure">
-                <img src="Projects/operator_methods.png" alt="Transfer operator estimation and invariant measure (methodological illustration)">
-            </div>
-        </div>
-    </article>
-
-    <!-- Research under Dr. Medel Cobaxín -->
-    <article class="entry">
-        <h2 class="entry-title">Contact Hamiltonians and Geodesic Perturbations</h2>
-        <p class="entry-meta">
-            Ongoing
-            <span class="sep">|</span>
-            with Dr. Héctor Medel Cobaxín
-            <span class="sep">|</span>
-            Python, Julia, SymPy
-        </p>
-
-        <div class="entry-body">
-            <p>
-                Research collaboration spanning the numerical study of geodesic perturbations in
-                general relativity, and theoretical work on contact Hamiltonians and dissipative
-                mechanics. The contact strand produced the projected semiexplicit integrator above.
-            </p>
-            <p>
-                <span class="runin">Approach.</span> Geodesic equations are integrated numerically
-                on curved geometries, with conservation diagnostics used to validate the
-                trajectories and study the effect of metric perturbations. Analytical derivations
-                are verified through computer algebra and complemented by numerical experiments in
-                Python and Julia.
-            </p>
-
-            <div class="figure-pair">
-                <img src="Projects/geodesic_perturbation_1.png" alt="Geodesic trajectory and conservation diagnostics under a time-dependent axisymmetric perturbation">
-                <img src="Projects/geodesic_perturbation_2.png" alt="Geodesic trajectory and conservation diagnostics under a dipolar perturbation">
-            </div>
-        </div>
-    </article>
-
-</main>
-
-<aside class="sidebar">
-    <img class="sidebar-image" src="assets/images/cover_2.png" alt="Julia set visualization">
-
-    <h2>Pages</h2>
-    <ul>
+<nav class="navbar">
+    <a href="index.html" class="nav-brand">Santiago Mejía</a>
+    <ul class="nav-links">
         <li><a href="index.html">Profile</a></li>
         <li><a href="work.html">Work</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="research.html" class="current">Research</a></li>
+        <li><a href="research.html" class="active">Research</a></li>
     </ul>
+</nav>
 
-    <h2>Topics</h2>
-    <ul class="topics">
-        <li>Nonlinear dynamical systems</li>
-        <li>Koopman and transfer operators</li>
-        <li>Contact geometry and relativity</li>
-        <li>Numerical simulation</li>
-        <li>Optics and instrumentation</li>
-        <li>Machine learning</li>
-        <li>Quantitative finance</li>
-    </ul>
+<header class="page-header">
+    <h1>Research</h1>
+    <p class="page-description">
+        Scientific modeling and computational physics research spanning data-driven dynamical
+        systems, structure-preserving numerical integration, differential geometry, and general
+        relativity.
+    </p>
+</header>
 
-    <h2>Elsewhere</h2>
-    <ul>
-        <li><a href="CV_Santiago_Mej%C3%ADa.pdf">Curriculum vitae (PDF)</a></li>
-        <li><a href="https://github.com/codemexico">GitHub</a></li>
-        <li><a href="https://arxiv.org/abs/2608.17198">arXiv:2608.17198</a></li>
-    </ul>
-</aside>
+<section class="projects-container">
 
-</div>
+    <!-- Preprint: projected contact integrator -->
+    <div class="project-card slide-in">
+        <h2>A Projected Semiexplicit Integrator for Dissipative Systems with Configuration-Dependent Kinetic Energy</h2>
+        <div class="project-subtitle">Preprint · arXiv:2608.17198 · August 2026</div>
+
+        <p>
+            Contact Hamiltonian dynamics gives dissipative mechanics an intrinsic action variable, but
+            the explicit contact splittings available today only reach kinetic energies whose terms are
+            exactly integrable — frozen-coordinate diagonal metrics such as the spherical pendulum or a
+            particle on a torus. Dense metrics with momentum cross terms, with the double pendulum as
+            the flagship case, fall outside that class. This work introduces a projected
+            Pihajoki–contact integrator for that non-separable setting.
+        </p>
+
+        <span class="label">Method</span>
+        <p class="content">
+            The scheme combines phase-space duplication, symmetric projection onto the physical diagonal,
+            and constant-friction damping half-steps, with the action factor carried by an exact Herglotz
+            update. It requires no binding parameter, returns the duplicated copies to the diagonal at
+            every step, and confines the nonlinear solve to the 2n projection variables. Under constant
+            friction the step rescales the contact volume ω = dη by the exact factor e^(−γτ) when the
+            projection is solved exactly, while time-symmetry, consistency, and smoothness yield an
+            O(τ³) one-step residual in the contact form.
+        </p>
+
+        <span class="label">Results</span>
+        <p class="content">
+            On the damped double pendulum, spherical pendulum, and torus particle the method is
+            second-order accurate, reproduces the contact decay law, and controls long-time energy and
+            contact drift in coarse or stiff regimes where the Tao baseline and the unprojected average
+            lose the solution. A head-to-head comparison against exact-contactomorphism splittings
+            delimits the niche: where a frozen-coordinate splitting exists it preserves the contact form
+            exactly and wins at matched cost, but for the dense double-pendulum metric the realizable
+            alternative is first-order with a prohibitive constant and the projected method prevails.
+        </p>
+
+        <span class="label">Authors</span>
+        <p class="content">
+            Lorena Loera-Galeana, Santiago Mejía, Espartaco Alvarado, Héctor Medel-Cobaxín.
+            Mathematical Physics (math-ph); Dynamical Systems (math.DS); Numerical Analysis (math.NA).
+        </p>
+
+        <span class="label">Topics</span>
+        <div class="tools">
+            <span class="tool-tag">Contact Geometry</span>
+            <span class="tool-tag">Geometric Integration</span>
+            <span class="tool-tag">Herglotz Principle</span>
+            <span class="tool-tag">Numerical Analysis</span>
+        </div>
+
+        <div class="links">
+            <a href="https://arxiv.org/abs/2608.17198" target="_blank" rel="noopener noreferrer">Read the Preprint</a>
+        </div>
+    </div>
+
+    <!-- Data-Driven Dynamical Systems -->
+    <div class="project-card slide-in">
+        <h2>Data-Driven Methods for Nonlinear Dynamical Systems</h2>
+        <div class="project-subtitle">OP Research Group · Ongoing</div>
+
+        <p>
+            Ongoing research on data-driven modeling of nonlinear dynamical systems. The work is
+            methodological in nature, building models directly from measured time series and using
+            them for analysis, forecasting, and control.
+        </p>
+
+        <span class="label">Toolbox</span>
+        <p class="content">
+            Koopman and Perron–Frobenius (transfer) operator theory, time-delay embeddings in the
+            HAVOK family, neural representations such as autoencoders, model predictive control,
+            and probabilistic model validation. Applications and results are currently unpublished.
+        </p>
+
+        <span class="label">Tools</span>
+        <div class="tools">
+            <span class="tool-tag">Python</span>
+            <span class="tool-tag">PyTorch</span>
+            <span class="tool-tag">Koopman / Transfer Operators</span>
+            <span class="tool-tag">MPC</span>
+        </div>
+
+        <div class="media-container">
+            <img src="Projects/operator_methods.png" alt="Transfer operator estimation and invariant measure (methodological illustration)">
+        </div>
+    </div>
+
+    <!-- Research under Dr. Medel Cobaxín -->
+    <div class="project-card slide-in">
+        <h2>Research under Dr. Héctor Medel Cobaxín</h2>
+        <div class="project-subtitle">Contact Hamiltonians &amp; General Relativity · Ongoing</div>
+
+        <p>
+            Research collaboration spanning the numerical study of geodesic perturbations in general
+            relativity, and theoretical work on contact Hamiltonians and dissipative mechanics. The
+            contact strand produced the projected semiexplicit integrator described above.
+        </p>
+
+        <span class="label">Approach</span>
+        <p class="content">
+            Geodesic equations are integrated numerically on curved geometries, with conservation
+            diagnostics used to validate the trajectories and study the effect of metric perturbations.
+            Analytical derivations are verified through computer algebra and complemented by numerical
+            experiments in Python and Julia.
+        </p>
+
+        <span class="label">Tools</span>
+        <div class="tools">
+            <span class="tool-tag">Python</span>
+            <span class="tool-tag">Julia</span>
+            <span class="tool-tag">SymPy</span>
+            <span class="tool-tag">Differential Geometry</span>
+        </div>
+
+        <div class="media-grid">
+            <img src="Projects/geodesic_perturbation_1.png" alt="Geodesic trajectory and conservation diagnostics under a time-dependent axisymmetric perturbation">
+            <img src="Projects/geodesic_perturbation_2.png" alt="Geodesic trajectory and conservation diagnostics under a dipolar perturbation">
+        </div>
+    </div>
+
+</section>
 
 <footer>
     © 2026 Santiago Mejía
 </footer>
 
-</div>
-
+<script src="js/animations.js"></script>
 </body>
 </html>
