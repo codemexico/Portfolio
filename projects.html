@@ -9,347 +9,348 @@
 </head>
 <body>
 
-<nav class="navbar">
-    <a href="index.html" class="nav-brand">Santiago Mejía</a>
-    <ul class="nav-links">
-        <li><a href="index.html">Profile</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
-        <li><a href="research.html">Research</a></li>
-    </ul>
-</nav>
+<div class="wrap">
 
-<header class="page-header">
-    <h1>Projects</h1>
-    <p class="page-description">
-        Applied engineering, scientific computing, and instrumentation projects — physics-based
-        modeling, numerical methods, machine learning, and computational tools developed for
-        real-world applications.
+<header class="masthead">
+    <div class="site-title"><a href="index.html">Santiago Mejía</a></div>
+    <p class="site-tagline">
+        Engineering physics at Tec de Monterrey. Computational modeling, nonlinear dynamical
+        systems, scientific simulation, and applied machine learning.
     </p>
 </header>
 
-<section class="projects-container">
+<div class="layout">
+
+<main class="content">
+
+    <h1 class="page-title">Projects</h1>
+    <p class="page-intro">
+        Applied engineering, scientific computing, and instrumentation work — physics-based
+        modeling, numerical methods, machine learning, and computational tools.
+    </p>
 
     <!-- RiskGate -->
-    <div class="project-card slide-in">
-        <h2>RiskGate: Portfolio and Options Risk System</h2>
-        <div class="project-subtitle">Quantitative Finance</div>
-
-        <p>
-            Co-developed a Python-based decision-support system integrating equity backtesting,
-            Black–Scholes option valuation with GARCH volatility, statistical arbitrage, position
-            sizing, and automated paper trading through Alpaca.
+    <article class="entry">
+        <h2 class="entry-title">RiskGate: Portfolio and Options Risk System</h2>
+        <p class="entry-meta">
+            Quantitative finance
+            <span class="sep">|</span>
+            Python, GARCH, Monte Carlo, Alpaca API
         </p>
 
-        <span class="label">Approach</span>
-        <p class="content">
-            The system produces a 0–100 approval score combining market regime, technical signals,
-            option quality, and process discipline, with hard stops and risk-budget-based sizing.
-            Strategies were evaluated across nine equities using 2022–2026 market data, 10,000
-            Monte Carlo simulations, and paper-trading experiments, while documenting concentration,
-            execution, and model risks.
-        </p>
+        <div class="entry-body">
+            <p>
+                Co-developed a Python-based decision-support system integrating equity backtesting,
+                Black–Scholes option valuation with GARCH volatility, statistical arbitrage,
+                position sizing, and automated paper trading through Alpaca.
+            </p>
+            <p>
+                <span class="runin">Approach.</span> The system produces a 0–100 approval score
+                combining market regime, technical signals, option quality, and process discipline,
+                with hard stops and risk-budget-based sizing. Strategies were evaluated across nine
+                equities using 2022–2026 market data, 10,000 Monte Carlo simulations, and
+                paper-trading experiments, while documenting concentration, execution, and model
+                risks.
+            </p>
 
-        <span class="label">Tools</span>
-        <div class="tools">
-            <span class="tool-tag">Python</span>
-            <span class="tool-tag">GARCH</span>
-            <span class="tool-tag">Monte Carlo</span>
-            <span class="tool-tag">Alpaca API</span>
+            <div class="figure">
+                <img src="Projects/riskgate_1.png" alt="Monte Carlo strategy paths with percentile bands (illustrative)">
+            </div>
+            <div class="figure">
+                <img src="Projects/riskgate_2.png" alt="Position-sizing comparison — equity and drawdown (illustrative)">
+            </div>
         </div>
-
-        <div class="media-container">
-            <img src="Projects/riskgate_1.png" alt="Monte Carlo strategy paths with percentile bands (illustrative)">
-        </div>
-        <div class="media-container">
-            <img src="Projects/riskgate_2.png" alt="Position-sizing comparison — equity and drawdown (illustrative)">
-        </div>
-    </div>
+    </article>
 
     <!-- Fringe Projection Profilometry -->
-    <div class="project-card slide-in">
-        <h2>3D Reconstruction by Fringe Projection Profilometry</h2>
-        <div class="project-subtitle">Experimental Optics</div>
-
-        <p>
-            Design and implementation of a full optical profilometry pipeline that reconstructs
-            the three-dimensional shape of real objects from projected fringe patterns. The system
-            combines an experimental projection setup with a complete numerical processing chain.
+    <article class="entry">
+        <h2 class="entry-title">3D Reconstruction by Fringe Projection Profilometry</h2>
+        <p class="entry-meta">
+            Experimental optics
+            <span class="sep">|</span>
+            Python, phase-shifting interferometry, image processing, uncertainty analysis
         </p>
 
-        <span class="label">Approach</span>
-        <p class="content">
-            Four-step phase-shifting was used to extract the wrapped phase, followed by phase
-            unwrapping, geometric calibration, and a height model to convert phase into physical
-            depth. Robust filtering and object masking were applied to clean the measurements, and
-            the method was validated against a reference sphere to quantify reconstruction accuracy.
-        </p>
+        <div class="entry-body">
+            <p>
+                Design and implementation of a full optical profilometry pipeline that reconstructs
+                the three-dimensional shape of real objects from projected fringe patterns. The
+                system combines an experimental projection setup with a complete numerical
+                processing chain.
+            </p>
+            <p>
+                <span class="runin">Approach.</span> Four-step phase-shifting was used to extract
+                the wrapped phase, followed by phase unwrapping, geometric calibration, and a height
+                model to convert phase into physical depth. Robust filtering and object masking were
+                applied to clean the measurements, and the method was validated against a reference
+                sphere to quantify reconstruction accuracy.
+            </p>
 
-        <span class="label">Tools</span>
-        <div class="tools">
-            <span class="tool-tag">Python</span>
-            <span class="tool-tag">Phase-Shifting Interferometry</span>
-            <span class="tool-tag">Image Processing</span>
-            <span class="tool-tag">Uncertainty Analysis</span>
+            <div class="figure-pair">
+                <img src="Projects/fringe_projection_1.png" alt="Projected fringe patterns">
+                <img src="Projects/fringe_projection_2.png" alt="3D reconstructions">
+            </div>
         </div>
-
-        <div class="media-grid">
-            <img src="Projects/fringe_projection_1.png" alt="Projected Fringe Patterns">
-            <img src="Projects/fringe_projection_2.png" alt="3D Reconstructions">
-        </div>
-    </div>
+    </article>
 
     <!-- Rotary Cutter - John Deere -->
-    <div class="project-card slide-in">
-        <h2>Rotary Cutter Dynamic Model</h2>
-        <div class="project-subtitle">John Deere</div>
-        
-        <p>
-            Complete dynamic modeling of a rotary cutter system using the Euler–Lagrange formalism 
-            with dissipative Rayleigh terms. The system is modeled as a set of coupled nonlinear 
-            differential equations describing the rotational motion of the disk and blades under 
-            realistic operating conditions. The project was part of a work collaboration with John Deere.
+    <article class="entry">
+        <h2 class="entry-title">Rotary Cutter Dynamic Model</h2>
+        <p class="entry-meta">
+            John Deere collaboration
+            <span class="sep">|</span>
+            Python, NumPy, Matplotlib, Tkinter
         </p>
 
-        <span class="label">Approach</span>
-        <p class="content">
-            Numerical integration via fourth-order Runge-Kutta (RK4) to simulate the system's response, 
-            enabling analysis of torque requirements, blade dynamics, and energy dissipation. The model 
-            bridges theoretical mechanics with an applied industrial context. 
+        <div class="entry-body">
+            <p>
+                Complete dynamic modeling of a rotary cutter system using the Euler–Lagrange
+                formalism with dissipative Rayleigh terms. The system is modeled as a set of coupled
+                nonlinear differential equations describing the rotational motion of the disk and
+                blades under realistic operating conditions.
+            </p>
+            <p>
+                <span class="runin">Approach.</span> Numerical integration via fourth-order
+                Runge–Kutta to simulate the system's response, enabling analysis of torque
+                requirements, blade dynamics, and energy dissipation.
+            </p>
+
+            <div class="figure">
+                <video autoplay loop muted playsinline>
+                    <source src="Projects/animation_lagrangian.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </article>
+
+    <!-- Heat Diffusion - Ternium -->
+    <article class="entry">
+        <h2 class="entry-title">Heat Diffusion in Steel Annealing</h2>
+        <p class="entry-meta">
+            Ternium collaboration
+            <span class="sep">|</span>
+            MATLAB, heat equation
         </p>
 
-        <span class="label">Tools</span>
-        <div class="tools">
-            <span class="tool-tag">Python</span>
-            <span class="tool-tag">NumPy</span>
-            <span class="tool-tag">Matplotlib</span>
-            <span class="tool-tag">Tkinter</span>
+        <div class="entry-body">
+            <p>
+                Numerical modeling of heat diffusion in steel coils during the annealing process used
+                in industrial bell furnaces. A physically motivated diffusion model was implemented
+                to capture the transient thermal behavior of the material under controlled furnace
+                conditions.
+            </p>
+            <p>
+                <span class="runin">Approach.</span> The project emphasizes the relationship between
+                thermal diffusivity, geometry, and process time, providing insight into how annealing
+                duration can be optimized without compromising material quality.
+            </p>
+
+            <div class="figure-pair">
+                <img src="Projects/animation_difussivemodel.gif" alt="Heat diffusion animation">
+                <img src="Projects/coldyhot.png" alt="Temperature field comparison">
+            </div>
         </div>
-
-        <div class="media-container">
-            <video autoplay loop muted playsinline>
-                <source src="Projects/animation_lagrangian.mp4" type="video/mp4">
-            </video>
-        </div>
-    </div>
-
-        <div class="project-card slide-in">
-        <h2>Heat Diffusion in Steel Annealing</h2>
-        <div class="project-subtitle">Ternium</div>
-        
-        <p>
-            Numerical modeling of heat diffusion in steel coils during the annealing process used 
-            in industrial bell furnaces. A physically motivated diffusion model was implemented to 
-            capture the transient thermal behavior of the material under controlled furnace conditions.
-        </p>
-
-        <span class="label">Approach</span>
-        <p class="content">
-            The project emphasizes the relationship between thermal diffusivity, geometry, and process time, 
-            providing insight into how annealing duration can be optimized without compromising material quality. 
-            Results are supported by visual animations illustrating the evolution of the temperature field.
-        </p>
-
-        <span class="label">Tools</span>
-        <div class="tools">
-            <span class="tool-tag">MATLAB</span>
-            <span class="tool-tag">Heat Equation</span>
-
-        </div>
-        <div class="media-grid">
-            <img src="Projects/animation_difussivemodel.gif" alt="Heat Diffusion Animation">
-            <img src="Projects/coldyhot.png" alt="Point">
-        </div>
-
-    </div>
-
-
+    </article>
 
     <!-- Telescope -->
-    <div class="project-card slide-in">
-        <h2>Optical Telescope Construction</h2>
-        <div class="project-subtitle">Experimental Optics</div>
-        
-        <p>
-            Complete design, construction, calibration, and characterization of a functional optical telescope. 
-            The project includes theoretical calculations of magnification, focal lengths, and resolution, as 
-            well as ray-tracing simulations based on the physical dimensions of the prototype.
+    <article class="entry">
+        <h2 class="entry-title">Optical Telescope Construction</h2>
+        <p class="entry-meta">
+            Experimental optics
+            <span class="sep">|</span>
+            Optical design, ray tracing, Python, uncertainty analysis
         </p>
 
-        <span class="label">Approach</span>
-        <p class="content">
-            Experimental calibration techniques were applied to quantify measurement uncertainty and image quality. 
-            The project documents both the theoretical framework and experimental methodology, supported by 
-            original photographs of the telescope and observed astronomical objects.
-        </p>
+        <div class="entry-body">
+            <p>
+                Complete design, construction, calibration, and characterization of a functional
+                optical telescope. The project includes theoretical calculations of magnification,
+                focal lengths, and resolution, as well as ray-tracing simulations based on the
+                physical dimensions of the prototype.
+            </p>
+            <p>
+                <span class="runin">Approach.</span> Experimental calibration techniques were applied
+                to quantify measurement uncertainty and image quality, documenting both the
+                theoretical framework and the experimental methodology.
+            </p>
 
-        <span class="label">Tools</span>
-        <div class="tools">
-            <span class="tool-tag">Optical Design</span>
-            <span class="tool-tag">Ray Tracing</span>
-            <span class="tool-tag">Python</span>
-            <span class="tool-tag">Uncertainty Analysis</span>
+            <div class="figure-pair">
+                <img src="Projects/photo_1_telescope.png" alt="Telescope construction">
+                <img src="Projects/photo_2_telescope.png" alt="Telescope observation">
+            </div>
         </div>
-
-        <div class="media-grid">
-            <img src="Projects/photo_1_telescope.png" alt="Telescope Construction">
-            <img src="Projects/photo_2_telescope.png" alt="Telescope Observation">
-        </div>
-    </div>
+    </article>
 
     <!-- Wireless Luminance Meter -->
-    <div class="project-card slide-in">
-        <h2>Wireless Luminance Meter for Displays</h2>
-        <div class="project-subtitle">Electronic Instrumentation · Team Project</div>
-
-        <p>
-            Design and construction of a handheld wireless instrument for measuring display luminance,
-            combining a VEML7700 digital sensor with an LDR reference on an Arduino UNO R4 WiFi. The
-            device includes an LCD, LED range indicators, and a 3D-printed ergonomic housing, and was
-            validated through an experimental characterization of linearity, hysteresis, repeatability,
-            and uncertainty.
+    <article class="entry">
+        <h2 class="entry-title">Wireless Luminance Meter for Displays</h2>
+        <p class="entry-meta">
+            Electronic instrumentation, team project
+            <span class="sep">|</span>
+            Arduino/C++, MATLAB, ThingSpeak, HTML/JS
         </p>
 
-        <span class="label">My Role</span>
-        <p class="content">
-            I was mainly responsible for the software and connectivity: the microcontroller code for
-            acquisition, processing, and state indication; the wireless link that logs measurements to
-            the ThingSpeak IoT platform; and the visualization interfaces, including a MATLAB GUI and
-            a custom live web dashboard.
-        </p>
+        <div class="entry-body">
+            <p>
+                Design and construction of a handheld wireless instrument for measuring display
+                luminance, combining a VEML7700 digital sensor with an LDR reference on an Arduino
+                UNO R4 WiFi. The device includes an LCD, LED range indicators, and a 3D-printed
+                ergonomic housing, and was validated through an experimental characterization of
+                linearity, hysteresis, repeatability, and uncertainty.
+            </p>
+            <p>
+                <span class="runin">My role.</span> I was mainly responsible for the software and
+                connectivity: the microcontroller code for acquisition, processing, and state
+                indication; the wireless link that logs measurements to the ThingSpeak IoT platform;
+                and the visualization interfaces, including a MATLAB GUI and a custom live web
+                dashboard.
+            </p>
 
-        <span class="label">Tools</span>
-        <div class="tools">
-            <span class="tool-tag">Arduino / C++</span>
-            <span class="tool-tag">MATLAB</span>
-            <span class="tool-tag">ThingSpeak IoT</span>
-            <span class="tool-tag">HTML / JS</span>
+            <div class="figure">
+                <img src="Projects/luminance_render.png" alt="CAD render of the luminance meter prototype">
+            </div>
         </div>
-
-        <div class="media-grid">
-            <img src="Projects/luminance_render.png" alt="CAD render of the luminance meter prototype">
-        </div>
-    </div>
+    </article>
 
     <!-- Exoplanet Detection -->
-    <div class="project-card slide-in">
-        <h2>Exoplanet Detection Using Neural Networks</h2>
-        <div class="project-subtitle">Astrophysics & Machine Learning</div>
-
-        <p>
-            Implementation of an automated pipeline for the classification of exoplanet transit signals
-            from TESS light-curve data. Physical preprocessing techniques, including detrending and period
-            detection, are combined with a one-dimensional convolutional neural network (CNN).
+    <article class="entry">
+        <h2 class="entry-title">Exoplanet Detection Using Neural Networks</h2>
+        <p class="entry-meta">
+            Astrophysics and machine learning
+            <span class="sep">|</span>
+            Python, TensorFlow, Lightkurve, NumPy
         </p>
 
-        <span class="label">Approach</span>
-        <p class="content">
-            The model outputs probabilistic classifications distinguishing confirmed exoplanets from
-            false positives. The project demonstrates the integration of astrophysical theory with
-            modern machine learning, visual outputs, and a standalone executable application.
-        </p>
+        <div class="entry-body">
+            <p>
+                Implementation of an automated pipeline for the classification of exoplanet transit
+                signals from TESS light-curve data. Physical preprocessing techniques, including
+                detrending and period detection, are combined with a one-dimensional convolutional
+                neural network.
+            </p>
+            <p>
+                <span class="runin">Approach.</span> The model outputs probabilistic classifications
+                distinguishing confirmed exoplanets from false positives, packaged as a standalone
+                executable application.
+            </p>
 
-        <span class="label">Tools</span>
-        <div class="tools">
-            <span class="tool-tag">Python</span>
-            <span class="tool-tag">TensorFlow</span>
-            <span class="tool-tag">Lightkurve</span>
-            <span class="tool-tag">NumPy</span>
-        </div>
+            <div class="figure">
+                <img src="Projects/exoplanet_transit.png" alt="Detrended and phase-folded transit light curve (illustrative)">
+            </div>
 
-        <div class="media-container">
-            <img src="Projects/exoplanet_transit.png" alt="Detrended and phase-folded transit light curve (illustrative)">
+            <p class="entry-links">
+                <a href="https://drive.google.com/file/d/1gtfSsxijIqjPU6zQeXruKEeCfgh9GpUu/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download the application</a>
+            </p>
         </div>
-
-        <div class="links">
-            <a href="https://drive.google.com/file/d/1gtfSsxijIqjPU6zQeXruKEeCfgh9GpUu/view?usp=sharing" target="_blank">Download Application</a>
-        </div>
-    </div>
+    </article>
 
     <!-- Stochastic Optimization - Inventory and Pricing -->
-    <div class="project-card slide-in">
-        <h2>Data-Driven Stochastic Optimization of Inventory and Pricing Policies</h2>
-        <div class="project-subtitle">Machine Learning and Metaheuristics</div>
-        
-        <p>
-            An integrated framework for the stochastic optimization of inventory management and pricing 
-            strategies in a real-world economic system. The methodology combines predictive modeling, 
-            Monte Carlo simulation, and hybrid optimization techniques to address uncertainty and 
-            variability in demand.
+    <article class="entry">
+        <h2 class="entry-title">Stochastic Optimization of Inventory and Pricing Policies</h2>
+        <p class="entry-meta">
+            Machine learning and metaheuristics
+            <span class="sep">|</span>
+            Python, neural networks, Monte Carlo, genetic algorithms
         </p>
 
-        <span class="label">Approach</span>
-        <p class="content">
-            A neural network model forecasts demand based on historical data, capturing nonlinear 
-            relationships and temporal patterns. These predictions are embedded into a stochastic 
-            simulation of daily operations, evaluating system performance under fluctuating conditions. 
-            Optimization is performed using a genetic algorithm to explore the decision space, followed 
-            by simulated annealing to refine solutions and improve convergence. The framework provides 
-            a scalable and generalizable approach to multi-objective optimization, balancing profitability 
-            and operational stability.
-        </p>
+        <div class="entry-body">
+            <p>
+                An integrated framework for the stochastic optimization of inventory management and
+                pricing strategies. The methodology combines predictive modeling, Monte Carlo
+                simulation, and hybrid optimization techniques to address uncertainty and
+                variability in demand.
+            </p>
+            <p>
+                <span class="runin">Approach.</span> A neural network model forecasts demand based on
+                historical data, capturing nonlinear relationships and temporal patterns. These
+                predictions are embedded into a stochastic simulation of daily operations,
+                evaluating system performance under fluctuating conditions. Optimization is
+                performed using a genetic algorithm to explore the decision space, followed by
+                simulated annealing to refine solutions and improve convergence.
+            </p>
 
-        <span class="label">Tools</span>
-        <div class="tools">
-            <span class="tool-tag">Python</span>
-            <span class="tool-tag">Neural Networks</span>
-            <span class="tool-tag">Monte Carlo</span>
-            <span class="tool-tag">Genetic Algorithms</span>
-        </div>
+            <div class="figure-pair">
+                <img src="Projects/demandagas_1.png" alt="Demand prediction model">
+                <img src="Projects/demandagas_2.png" alt="Optimization results">
+            </div>
 
-        <div class="media-grid">
-            <img src="Projects/demandagas_1.png" alt="Demand Prediction Model">
-            <img src="Projects/demandagas_2.png" alt="Optimization Results">
+            <p class="entry-links">
+                <a href="https://drive.google.com/file/d/163dI8oOURmp0W8Xrh4KPj7qDcF2ntN_u/view?usp=sharing" target="_blank" rel="noopener noreferrer">View the application</a>
+            </p>
         </div>
-        <a href="https://drive.google.com/file/d/163dI8oOURmp0W8Xrh4KPj7qDcF2ntN_u/view?usp=sharing" 
-           class="project-link" target="_blank" rel="noopener noreferrer">
-            View Application →
-        </a>
-    </div>
+    </article>
 
     <!-- Simulated Annealing - Packing Fraction -->
-    <div class="project-card slide-in">
-        <h2>Stochastic Optimization of Packing Fraction Using Simulated Annealing</h2>
-        <div class="project-subtitle">Geometric Optimization</div>
-        
-        <p>
-            Development of a simulated-compression algorithm for maximizing the packing fraction of hard 
-            disks confined within a two-dimensional box. The algorithm determines dense, non-overlapping 
-            configurations by stochastically optimizing both particle positions and the effective size 
-            of the containing domain.
+    <article class="entry">
+        <h2 class="entry-title">Packing Fraction Optimization by Simulated Annealing</h2>
+        <p class="entry-meta">
+            Geometric optimization
+            <span class="sep">|</span>
+            Python, NumPy, simulated annealing, Metropolis algorithm
         </p>
 
-        <span class="label">Approach</span>
-        <p class="content">
-            The algorithm proposes random displacements of particles, followed by an evaluation of an 
-            objective function that penalizes overlaps and inefficient spatial arrangements. Configuration 
-            updates are accepted or rejected according to a Metropolis-type criterion. A compression 
-            mechanism gradually reduces the confining box size, coupling configurational optimization 
-            with geometric compression. As the temperature decreases, the algorithm transitions from 
-            exploratory stochastic motion to deterministic refinement, converging toward configurations 
-            with high packing fraction.
-        </p>
+        <div class="entry-body">
+            <p>
+                Development of a simulated-compression algorithm for maximizing the packing fraction
+                of hard disks confined within a two-dimensional box. The algorithm determines dense,
+                non-overlapping configurations by stochastically optimizing both particle positions
+                and the effective size of the containing domain.
+            </p>
+            <p>
+                <span class="runin">Approach.</span> The algorithm proposes random displacements of
+                particles, followed by an evaluation of an objective function that penalizes overlaps
+                and inefficient spatial arrangements. Configuration updates are accepted or rejected
+                according to a Metropolis-type criterion, while a compression mechanism gradually
+                reduces the confining box size. As the temperature decreases, the algorithm
+                transitions from exploratory stochastic motion to deterministic refinement.
+            </p>
 
-        <span class="label">Tools</span>
-        <div class="tools">
-            <span class="tool-tag">Python</span>
-            <span class="tool-tag">NumPy</span>
-            <span class="tool-tag">Simulated Annealing</span>
-            <span class="tool-tag">Metropolis Algorithm</span>
+            <div class="figure-pair">
+                <img src="Projects/annealing_1.png" alt="Packing configuration">
+                <img src="Projects/annealing_2.png" alt="Annealing convergence">
+            </div>
         </div>
+    </article>
 
-        <div class="media-grid">
-            <img src="Projects/annealing_1.png" alt="Packing Configuration">
-            <img src="Projects/annealing_2.png" alt="Annealing Convergence">
-        </div>
-    </div>
+</main>
 
-</section>
+<aside class="sidebar">
+    <img class="sidebar-image" src="assets/images/cover_2.png" alt="Julia set visualization">
+
+    <h2>Pages</h2>
+    <ul>
+        <li><a href="index.html">Profile</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="projects.html" class="current">Projects</a></li>
+        <li><a href="research.html">Research</a></li>
+    </ul>
+
+    <h2>Topics</h2>
+    <ul class="topics">
+        <li>Nonlinear dynamical systems</li>
+        <li>Koopman and transfer operators</li>
+        <li>Contact geometry and relativity</li>
+        <li>Numerical simulation</li>
+        <li>Optics and instrumentation</li>
+        <li>Machine learning</li>
+        <li>Quantitative finance</li>
+    </ul>
+
+    <h2>Elsewhere</h2>
+    <ul>
+        <li><a href="CV_Santiago_Mej%C3%ADa.pdf">Curriculum vitae (PDF)</a></li>
+        <li><a href="https://github.com/codemexico">GitHub</a></li>
+        <li><a href="https://arxiv.org/abs/2608.17198">arXiv:2608.17198</a></li>
+    </ul>
+</aside>
+
+</div>
 
 <footer>
     © 2026 Santiago Mejía
 </footer>
 
-<script src="js/animations.js"></script>
+</div>
+
 </body>
 </html>
