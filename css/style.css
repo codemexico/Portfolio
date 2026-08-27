@@ -12,7 +12,17 @@
     --accent: #2448d1;
 
     --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --measure: 62ch;
+
+    /* Text measure — fills narrow windows, then widens with the viewport and
+       stops once the line gets too long to track comfortably. */
+    --measure: min(100%, clamp(46rem, 72vw, 60rem));
+
+    /* Fixed media boxes. Figures are drawn inside one of these and fitted with
+       object-fit, so the size of the source file never sets the layout. */
+    --media-w: 40rem;      /* single figure or video */
+    --media-cell: 29rem;   /* one cell of a two-up row */
+    --media-h: 20rem;      /* display height, all media */
+    --hero-img: 12.5rem;   /* portrait on the profile page */
 }
 
 * {
@@ -145,7 +155,8 @@ footer {
     grid-column: 2;
     grid-row: 1 / span 2;
 
-    width: clamp(140px, 22vw, 220px);
+    width: var(--hero-img);
+    max-width: 100%;
     height: auto;
     aspect-ratio: 1;
     object-fit: cover;
@@ -305,6 +316,9 @@ section h2 {
    ================================================================ */
 
 .project-card .media-container {
+    width: min(100%, var(--media-w));
+    height: var(--media-h);
+
     margin-top: 2.25rem;
     border: 1px solid var(--line-strong);
     background: var(--surface);
@@ -312,24 +326,34 @@ section h2 {
 }
 
 .project-card .media-container.small {
-    max-width: 520px;
+    --media-w: 32rem;
 }
 
 .project-card img,
 .project-card video {
     width: 100%;
+    height: 100%;
+    object-fit: contain;
     display: block;
 }
 
+/* Two-up row. Cells hold their fixed size and wrap once they no longer fit
+   side by side, so nothing stretches or overflows on a narrow window. */
 .project-card .media-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     margin-top: 2.25rem;
 }
 
-.project-card .media-grid img {
+.project-card .media-grid > img,
+.project-card .media-grid > video {
+    flex: 0 0 auto;
+    width: min(100%, var(--media-cell));
+    height: var(--media-h);
+
     border: 1px solid var(--line-strong);
+    background: var(--surface);
 }
 
 /* ================================================================
@@ -493,10 +517,6 @@ footer a:hover {
 
     .project-card {
         padding: 2.5rem 0;
-    }
-
-    .project-card .media-grid {
-        grid-template-columns: 1fr;
     }
 
     .links {
